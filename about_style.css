@@ -1,0 +1,56 @@
+
+.whole{
+}
+
+.header{
+  text-align: center;
+  margin:auto;
+}
+
+.nav{
+  margin: auto;
+  height: 30px;
+  width : 850px;
+}
+.nav ul li{
+  list-style:none;
+  color: white;
+  background-color: #2d2d2d;
+  float: left;
+  line-height: 30px;
+  text-align: center;
+}
+
+.nav > ul > li >a{
+  text-decoration: none;
+  color:white;
+  display:block;
+  width: 190px;
+  font-size: 12px;
+  font-weight: bold ;
+/*  font-family: "Trebuchet MS", Dotum, Arial; */
+}
+.nav>ul>li>a:hover{
+  color:red;
+  background-color: #4d4d4d;
+}
+
+.mid{
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+.section{
+  margin: auto;
+  text-align: left;
+}
+
+.footer{
+  clear:both;
+  text-align: center;
+  color: grey;
+  border-top: 1px solid #aaa;
+  margin: auto;
+  font-size: 12px;
+}
