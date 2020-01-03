@@ -1,4 +1,12 @@
 ---
 layout: default
-title: Home 
+title: Home
 ---
+
+
+{% for post in site.posts %}
+  <div class="post-list">
+    <h2 class="post-title"><a href="{{post.url}}">[{{post.tag}}]- {{post.title}}</a></h2>
+    <p style="text-align:center; color: grey; font-size:12px">In {{post.last_written}} By {{post.author}}</p>
+  </div>
+{% endfor %}

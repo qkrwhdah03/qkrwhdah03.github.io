@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
-<html>
+<html lan="ko">
   {% include head.html %}
   <body>
     <div class="whole">
     {% include header.html %}
     {% include nav.html %}
-    
-      <div class="mid">
-      {% if page.title=="Home" %}
-      {% include sidebar.html %}
-      {% endif %}
-      <div class="section">
-      {{ content }}
-      </div>
+
+    <div class="mid">
+        {% if page.title=="Home" %}
+        {% include sidebar.html %}
+        {% endif %}
+        <div class="section">
+          {{ content }}
+        </div>
     </div>
     {% include footer.html %}
   </div>

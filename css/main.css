@@ -1,6 +1,6 @@
 .whole{
   width:100%;
-  border: none;
+  border:none;
 }
 header{
   text-align: center;
@@ -25,15 +25,30 @@ nav{
 
 .section{
   margin: auto;
-  width: 800px;
-  clear: both;
+  width: 750px;
   border: none;
 }
 
+.post-title{
+    text-align: center;
+}
+
+.post-list{
+  border-bottom: 1px solid grey;
+}
+
+.post-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.post-title a:hover{
+  color: purple;
+}
 
 .content{
   float: left;
-  width: 20%;
+  width: 300px;
   border: none;
 }
 
