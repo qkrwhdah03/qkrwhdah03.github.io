@@ -1,22 +1,26 @@
-
 header{
+}
+
+body{
+  font-size:16px;
+}
+
+n.nav-list >  a{
+  width:190px;
+}
+.nav-list {
+  width:190px;
 }
 
 nav{
   margin: auto;
   padding: 20px 0 10px 0;
-  width: 850px;
+  width: 760px;
 }
 
 .mid{
   margin: auto;
   width:100%;
-}
-
-.sidebar{
-  width: 300px;
-  height: 100%;
-  position: fixed;
 }
 
 .section{
@@ -29,13 +33,74 @@ footer{
   width: 100%;
   margin: auto;
   margin-top: 30px;
-  font-size: 12px
 }
 
-@media( max-width: 1023px ){
+@media screen and (min-width: 415px) and (max-width: 800px){ /* 중앙 메뉴바를 없애든 수정해야됨*/
+  body{
+    font-size:14px;
+  }
+.nav-list  >  a{
+    width:100px;
+  }
+.nav-list {
+    width:100px;
+  }
+  nav{
+    margin: auto;
+    padding: 20px 0 10px 0;
+    width: 400px;
+  }
 
+  .mid{
+    margin: auto;
+    width:100%;
+  }
+
+  .section{
+    margin: auto;
+    width: 400px;
+  }
+
+  footer{
+    clear : both;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
 }
 
-@media( max-width: 767 px){ /* 중앙 메뉴바를 없애든 수정해야됨*/
+@media screen and (max-width: 414px){
+  body{
+    font-size:12px;
+  }
+.nav-list  >  a{
+    width:75px;
+  }
 
+.nav-list {
+    width:75px;
+}
+
+  nav{
+    margin: auto;
+    padding: 20px 0 10px 0;
+    width: 300px;
+  }
+
+  .mid{
+    margin: auto;
+    width:100%;
+  }
+
+  .section{
+    margin: auto;
+    width: 300px;
+  }
+
+  footer{
+    clear : both;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
 }

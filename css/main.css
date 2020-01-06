@@ -38,6 +38,11 @@ header > h1{
   margin-left: 10px;
 }
 
+.search-button{
+  text-decoration: none;
+  color: black;
+}
+
 .input-text{
   outline: none;
   border: 0;
@@ -47,6 +52,7 @@ footer{
   text-align: center ;
   color: grey;
   border-top: 1px solid #aaa;
+  font-size:0.75em;
 }
 
 
@@ -68,7 +74,7 @@ footer{
 }
 
 .post-description{
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .pagination{
@@ -80,12 +86,12 @@ footer{
   text-decoration: none;
   transition: font-size 0.3s;
   color: black;
-  font-size:12px;
+  font-size:0.75em;
 }
 
 .pagination a:hover{
   transition: font-size 0.3s;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 .start{
   color: grey;
@@ -119,7 +125,7 @@ footer{
 
 .wel{
   color: white;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -138,31 +144,36 @@ footer{
   font-weight: bolder;
 }
 
-nav > ul > li{
+.nav-all{
+  display: inline;
+}
+
+.nav-list{
   list-style: none;
   color: white;
   background-color:#2d2d2d;
-  float: left;
   text-align: center;
+  margin: auto;
+  float:left;
   line-height: 30px;
 }
 
-nav > ul >li >  a{
+
+.nav-list >  a{
   text-decoration: none;
   color: white;
   display: block;
-  width:190px;
-  font-size: 13px;
+  font-size: 0.85em;
   font-weight :bold;
 }
 
-nav >ul > li >a:hover{
+.nav-list >a:hover{
   color:red;
   background-color: #4d4d4d;
 }
 
 .para{
-
+  font-size: 0.9em;
 }
 
 
