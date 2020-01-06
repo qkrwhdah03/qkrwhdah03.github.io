@@ -2,15 +2,15 @@
 <html lan="ko">
   {% include head.html %}
   <body>
-    <div class="whole">
     {% include header.html %}
+    <div class="whole">
+    {% if page.title=="Home" %}
+      {% include welcome.html %}
+    {% endif %}
     {% include nav.html %}
-
     <div class="mid">
-        {% if page.title=="Home" %}
-        {% include sidebar.html %}
-        {% endif %}
         <div class="section">
+          <br><br>
           {{ content }}
         </div>
     </div>

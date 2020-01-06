@@ -1,0 +1,41 @@
+
+header{
+}
+
+nav{
+  margin: auto;
+  padding: 20px 0 10px 0;
+  width: 850px;
+}
+
+.mid{
+  margin: auto;
+  width:100%;
+}
+
+.sidebar{
+  width: 300px;
+  height: 100%;
+  position: fixed;
+}
+
+.section{
+  margin: auto;
+  width: 750px;
+}
+
+footer{
+  clear : both;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 12px
+}
+
+@media( max-width: 1023px ){
+
+}
+
+@media( max-width: 767 px){ /* 중앙 메뉴바를 없애든 수정해야됨*/
+
+}

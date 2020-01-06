@@ -3,10 +3,27 @@ layout: default
 title: Home
 ---
 
-
-{% for post in site.posts %}
+<hr>
+{% for post in paginator.posts %}
   <div class="post-list">
-    <h2 class="post-title"><a href="{{post.url}}">[{{post.tag}}]- {{post.title}}</a></h2>
-    <p style="text-align:center; color: grey; font-size:12px">In {{post.last_written}} By {{post.author}}</p>
+    <h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+    <p style="text-align:center; color: grey; font-size:12px;"><i class="fa fa-calendar"></i> {{post.last_written}}&nbsp&nbsp&nbsp&nbsp<i class="fa fa-pencil"></i>  {{post.author}}</p>
+    <p style="text-align:center; color: grey; font-size:12px;"><i class="fa fa-tag"></i> {{post.tag}}</p><br>
+    <p class="post-description"><i class="fa fa-book" style="color: grey"></i>&nbsp&nbsp{{post.description}}</p>
+    <br>
   </div>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-arrow-left"> &nbsp</i></a>
+  {% else %}
+    <span class="start">Start</span>
+  {% endif %}
+  <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next"> &nbsp<i class="fa fa-arrow-right"></i></a>
+  {% else %}
+    <span class="end">End</span>
+  {% endif %}
+</div>
