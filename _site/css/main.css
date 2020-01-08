@@ -23,7 +23,7 @@ header > h1{
   /* 사이트 메인 제목 알아서 수정*/
 }
 
-article{
+.article{
   border: 1px solid grey;
   border-radius: 15px;
 }
@@ -99,21 +99,26 @@ footer{
   border-radius: 15px;
 }
 
-.recommend_title > a{
+.recommend-title{
+  font-size:0.9em;
+}
+
+.recommend-title > a{
   text-decoration: none;
   color: black;
 }
 
-.recommend_title > a:hover{
-  color: blue;
-}
-
-.prev_next_button{
-  text-decoration: none;
+.recommend-title > a:hover{
   color: #0174DF;
 }
 
-.prev_next{
+.prev-next-button{
+  text-decoration: none;
+  color: #0174DF;
+  font-size: 0.8em;
+}
+
+.prev-next{
   text-align: center;
 }
 

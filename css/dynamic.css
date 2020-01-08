@@ -28,7 +28,7 @@ nav{
   width: 100%;
 }
 
-article{
+.article{
   width: 70%;
   margin: auto;
 }
@@ -48,13 +48,13 @@ article{
   padding-bottom: 10px;
 }
 
-.iner_recommend{
+.iner-recommend{
   width: 70%;
   margin:auto;
 }
 
 
-.prev_next{
+.prev-next{
   width: 70%;
   margin: auto;
 }
@@ -105,7 +105,7 @@ footer{
     width: 100%;
   }
 
-  article{
+  .article{
     width: 80%;
     margin: auto;
   }
@@ -126,13 +126,13 @@ footer{
     padding-bottom: 10px;
   }
 
-  .iner_recommend{
+  .iner-recommend{
     width: 70%;
     margin:auto;
   }
 
 
-  .prev_next{
+  .prev-next{
     width: 80%;
     margin: auto;
   }
@@ -185,7 +185,7 @@ footer{
     width: 100%;
   }
 
-  article{
+  .article{
     width: 90%;
     margin: auto;
   }
@@ -206,13 +206,13 @@ footer{
     padding-bottom: 10px;
   }
 
-  .iner_recommend{
+  .iner-recommend{
     width: 80%;
     margin:auto;
   }
 
 
-  .prev_next{
+  .prev-next{
     width: 90%;
     margin: auto;
   }
