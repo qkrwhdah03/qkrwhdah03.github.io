@@ -20,12 +20,14 @@ layout : default
     {% if page.previous.url %}
       <a href="{{page.previous.url}}" class="prev-next-button"> &nbsp이전글: {{page.previous.title}}</a>
     {% else %}
+    Start
     {% endif %}
   </div>
   <div style="width: 49%; text-align: right; display: inline-block; magin:auto;">
     {% if page.next.url %}
       <a href="{{page.next.url}}" class="prev-next-button">다음글: {{page.next.title}} &nbsp</a>
     {% else %}
+    End
     {%  endif %}
   </div>
 </div>
@@ -34,7 +36,7 @@ layout : default
 
 <div class="recommend">
   <div class="iner-recommend">
-    <h4 style="align:center; font-size:1.0em">Recommend Posts related : {{page.tag}}</h4>
+    <h4 style="align:center; font-size: 1.0em;">Recommend Posts related : {{page.tag}}</h4>
     <ul>
       {% assign count=0 %}
       {% for post in site.posts %}
