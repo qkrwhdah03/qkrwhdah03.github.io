@@ -10,8 +10,8 @@ tag: "Machine Learning"
 ### 퍼셉트론(Perceptron)?
 This is my first testing post...
 
-``` python
+{% highlight python roudge linenos %}
 
   print("Hello World!")
 
-```
+{% endhighlight %}

@@ -11,11 +11,10 @@ tag: "Machine Learning"
 ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어 보았습니다. <br>
 이번 포스트에서는 산술 연산에서 글래스까지 정리했습니다. <br>
 <br>
-> 들어가기에 앞서서 "밑바닥부터 시작하는 딥러닝" 책을 참고했음을 밝힙니다.
 <br>
 
 ### 1) 산술 연산
-``` python
+{% highlight python roudge linenos %}
 
   1+1 # 더하기
   4-5 # 빼기  
@@ -23,30 +22,30 @@ ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어
   4/2 # 나누기
   4**2 # 4의 2제곱
 
-```
+{% endhighlight %}
 
 ### 2) 자료형
-``` python
+{% highlight python roudge linenos %}
 
   type(10) # int
   type(1.2) # float
   type('apple') # str(string)
 
-```
+{% endhighlight %}
 
 ### 3) 변수
-``` python
+{% highlight python roudge linenos %}
 
   x = 10 # 변수 x 선언
   print(x)
-  y=3.14 # 변수 y 선언 
+  y=3.14 # 변수 y 선언
   print(x*y)
 
 
-```
+{% endhighlight %}
 
 ### 4) 리스트
-``` python
+{% highlight python roudge linenos %}
 
   a = [1,2,3,4,5]
   print(a) # 리스트 출력
@@ -59,34 +58,34 @@ ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어
   a[:-1] # 처음부터 마지막 원소 앞까지
   a[:-2] # 처음부터 마지막 원소 2개 앞까지
 
-```
+{% endhighlight %}
 
 ### 5) 딕셔너리
-``` python
+{% highlight python roudge linenos %}
 
   dic ={'height':180} # c++ STL의 map과 유사
   print(dic['height']) # 180
   dic['weight']=70 # key: 'weight' value: 70
   print(dic) # {'height': 180, 'weight': 70}
 
-```
+{% endhighlight %}
 
 ### 6) Bool 형
-``` python
+{% highlight python roudge linenos %}
 
   # Bool 형 -> True 와 False 값을 취급
-  hungry= True
-  sleepy= False
+  hungry = True
+  sleepy = False
   type(hungry) # Bool
   not hungry # False
   not sleepy # True
   hungry and sleepy # False  
   hungry or sleepy # True
 
-```
+{% endhighlight %}
 
 ### 7) 조건문
-``` python
+{% highlight python roudge linenos %}
 
   if 조건1 :
     조건 1 만족시 실행 내용
@@ -95,10 +94,10 @@ ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어
   else :
     이외의 경우 실행 내용
 
-```
+{% endhighlight %}
 
 ### 8) 반복문
-``` python
+{% highlight python roudge linenos %}
 
   for i in [1,3,5]: #결과 1 3 5
     print(i, end=' ')
@@ -111,10 +110,10 @@ ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어
       print(i, end=' ')
       i+=1
 
-```
+{% endhighlight %}
 
 ### 9) 함수
-``` python
+{% highlight python roudge linenos %}
 
   def hello(): # 파라미터가 없음
     print('Hello World!')
@@ -126,10 +125,10 @@ ML을 공부할 때 필요한 Python 의 기초 문법을 간단하게 다루어
 
   hello("Happy") # 함수 호출 결과 : Hello Happy!
 
-```
+{% endhighlight %}
 
 ### 10) 클래스(Class)
-``` python
+{% highlight python roudge linenos %}
 
 class test:
   def __init__(self,name): # 생성자
@@ -140,4 +139,7 @@ class test:
   def fun2(self,):
       print("yes")
 
-```
+{% endhighlight %}
+
+<br><br><br>
+<i>내용은 "밑바닥부터 시작하는 딥러닝" 책을 참고했음을 밝힙니다. </i>
