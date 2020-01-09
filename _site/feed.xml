@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-09T19:50:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Study Note</title><subtitle>This is blog that I summarize what I studied.</subtitle><entry><title type="html">콘솔 오목 프로그램</title><link href="http://localhost:4000/2020/01/09/Omoku.html" rel="alternate" type="text/html" title="콘솔 오목 프로그램" /><published>2020-01-09T00:00:00+09:00</published><updated>2020-01-09T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/09/Omoku</id><content type="html" xml:base="http://localhost:4000/2020/01/09/Omoku.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;설명&quot;&gt;설명&lt;/h3&gt;
+&lt;p&gt;중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스입니다.
+흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여
+흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를
+통하여 돌을 놓을 수 있도록 만들었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;코드&quot;&gt;코드&lt;/h3&gt;
+
+&lt;p&gt;총 311줄 입니다. &lt;br /&gt;
+코드가 포스트에 넣기에는 길어 링크로 남깁니다.&lt;br /&gt;
+풀 코드는 다음 사이트에서 볼 수 있습니다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/qkrwhdah03/qkrwhdah03/blob/master/Omoku.cpp&quot; title=&quot;전체 코드&quot;&gt;오목 코드 : To Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;실행화면&quot;&gt;실행화면&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/image/omok.PNG&quot; alt=&quot;omok.png&quot; width=&quot;70%&quot; height=&quot;70%&quot; /&gt;&lt;/p&gt;</content><author><name>qkrwhdah03</name></author><category term="C/C++" /><summary type="html">설명 중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스입니다. 흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여 흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를 통하여 돌을 놓을 수 있도록 만들었습니다.</summary></entry><entry><title type="html">Markdown 포스팅 작성하기</title><link href="http://localhost:4000/2020/01/04/markdown.html" rel="alternate" type="text/html" title="Markdown 포스팅 작성하기" /><published>2020-01-04T00:00:00+09:00</published><updated>2020-01-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/04/markdown</id><content type="html" xml:base="http://localhost:4000/2020/01/04/markdown.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-markdown이란&quot;&gt;1. Markdown이란?&lt;/h3&gt;
+&lt;p&gt;Markdown은 텍스트 기반의 마크업언어로 2004년 존 그루버에 의해 만들어졌다. 특수기호와 문자를 이용한 간단한 구조의 문법으로 웹에서 보다 빠르게 컨텐츠를 작성하고 보다 직관적이라는 장점이 있다.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2--markdown-문법-알아보기&quot;&gt;2.  Markdown 문법 알아보기&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;제목&quot;&gt;제목&lt;/h4&gt;
+    &lt;p&gt;제목을 표시할 때는 “=”나 “-“를 통해 지정한다. 다음과 같이 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  h1 : 가장 큰 제목
+  ===
+  h2 : 다음 큰 제목
+  ---
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;글머리&quot;&gt;글머리&lt;/h4&gt;
+    &lt;p&gt;”#”의 개수를 통해 글머리를 지정할 수 있다. “#”의 개수는 1~6개로 개수가 늘어날 때마다 글씨의 크기가 작아지고 하위 분류로 내려간다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  &lt;span class=&quot;cp&quot;&gt;#h1
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;##h2
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;###h3
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;####h4
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;#####h5
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;######h6
+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;인용구&quot;&gt;인용구&lt;/h4&gt;
+    &lt;p&gt;인용구의 경우 “&amp;gt;”의 문자를 사용하여 표현한다. “&amp;gt;”문자 뒤에 인용구를 붙이면 된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;목록리스트&quot;&gt;목록(리스트)&lt;/h4&gt;
+    &lt;p&gt;”*” 모양을 사용하여 순서 없는 리스트를 만들고, “1.”과 같이 숫자 뒤에 점을 붙여 순서 있는 리스트를 만들어낸다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
+    &lt;p&gt;숫자 1키 옆에 있는 “`“기호나 “-” 기호를 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyhton&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이런 식으로 연속되게 기호 3개를 입력하고 사용된 언어의 이름을 옆에 붙여준 후, 사이에 코드를 입력해 주면 된다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;수평선&quot;&gt;수평선&lt;/h4&gt;
+    &lt;p&gt;”-“ 이나 “*” 이나 “_” 를 3개 이상 작성하면 수평선이 된다.&lt;br /&gt;
+(단, -을 사용할 경우에 header로 인식할 수 있으니 이 전 라인은 비워두어야 한다.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;링크&quot;&gt;링크&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;링크&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;주소&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;링크에 대한 설명-마우스 hover시에 나타남&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;위의 형태로 작성하여  &amp;lt;a&amp;gt; 태그와 같은 역할을 한다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;강조&quot;&gt;강조&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;기울어진&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;글씨체&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;굵은&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;글씨체&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;
+
+  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;기울어진&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;글씨체&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;굵은&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;글씨체&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;이미지&quot;&gt;이미지&lt;/h4&gt;
+    &lt;p&gt;인라인 이미지: ![alt text] (/test.png)&lt;br /&gt;
+링크 이미지 : ![alt text] (image_URL)&lt;br /&gt;
+참조 이미지 : ![alt text] [1] , [1]:/test.png&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;표&quot;&gt;표&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;markdown-포스트&quot;&gt;Markdown 포스트&lt;/h3&gt;
+    &lt;p&gt;내가 사용하는 Github 블로그의 경우 테마에 따라 다르겠지만, file.md와 같이 markdown 파일의 시작부분에 title 과 같이 post에 대한 정보를 미리 적어주어야한다. 그후에 위의 문법들을 사용하여 컨텐츠를 표시해 주면 된다. 마지막에는 .md파일을 _posts 폴더에 넣어서 Github에 변경사항을 push 해주면 된다.
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>qkrwhdah03</name></author><category term="Others" /><summary type="html"></summary></entry><entry><title type="html">퍼셉트론(Perceptron)</title><link href="http://localhost:4000/2020/01/03/Perceptron.html" rel="alternate" type="text/html" title="퍼셉트론(Perceptron)" /><published>2020-01-03T00:00:00+09:00</published><updated>2020-01-03T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/03/Perceptron</id><content type="html" xml:base="http://localhost:4000/2020/01/03/Perceptron.html">&lt;h3 id=&quot;퍼셉트론perceptron&quot;&gt;퍼셉트론(Perceptron)?&lt;/h3&gt;
+&lt;p&gt;This is my first testing post…&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>qkrwhdah03</name></author><category term="Machine Learning" /><summary type="html">퍼셉트론(Perceptron)? This is my first testing post…</summary></entry><entry><title type="html">기초 Python-(1)</title><link href="http://localhost:4000/2020/01/03/python-basic.html" rel="alternate" type="text/html" title="기초 Python-(1)" /><published>2020-01-03T00:00:00+09:00</published><updated>2020-01-03T00:00:00+09:00</updated><id>http://localhost:4000/2020/01/03/python-basic</id><content type="html" xml:base="http://localhost:4000/2020/01/03/python-basic.html"></content><author><name>qkrwhdah03</name></author><category term="Machine Learning" /><summary type="html"></summary></entry></feed>

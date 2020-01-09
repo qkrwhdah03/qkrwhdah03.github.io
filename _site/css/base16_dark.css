@@ -1,18 +1,12 @@
-.highlight {
-  font-size: 0.3em;
-  text-overflow: clip;
-  white-space:normal;
-  word-wrap:break-word;
-}
-.highlight table td { padding: 5px;}
-.highlight table pre { margin: auto;}
-
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
 .highlight, .highlight .w {
-  color: #303030;
+  color: #d0d0d0;
+  background-color: #151515;
 }
 .highlight .err {
-  color: #151515;
-  background-color: #ac4142;
+  color: orange;
+  background-color: none;
 }
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
   color: #505050;
