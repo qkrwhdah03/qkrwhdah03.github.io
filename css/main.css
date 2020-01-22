@@ -13,7 +13,7 @@ header{
     height: 75px;
     background-color: white;
     align: center;
-    border-bottom: 1px solid #a5a5a5;
+    border-bottom: 1px solid white;
     margin: 0;
     position: fixed;
     display: block;
@@ -23,7 +23,10 @@ header > h1{
   /* 사이트 메인 제목 알아서 수정*/
 }
 
-
+header > a:hover{
+  color: grey;
+  transition: color 0.5s;
+}
 .article{
   border: 1px solid grey;
   border-radius: 15px;
@@ -84,6 +87,7 @@ footer{
 
 .post-title a:hover{
   color: purple;
+  transition: color 0.3s ;
 }
 
 .post-description{
@@ -153,18 +157,20 @@ footer{
 }
 
 .close-button{
-  color: black;
+  color:white;
+  font-size: 2em;
 }
 
 .hover-close > a:hover{
-  color: red;
+  color: grey;
+  transition: color 1s;
 }
 
 
 .welcome{
   width: 100%;
-  height: 300px;
-  background-image: url(/image/welcome2.jpg);
+  height: 270px;
+  background-image: url(/image/welcome4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
