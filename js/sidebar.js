@@ -1,5 +1,5 @@
 function opensidebar(){
-  document.getElementById('side').style.width='300px';
+  document.getElementById('side').style.width='250px';
   document.getElementById('side').style.paddingLeft='20px';
 }
 

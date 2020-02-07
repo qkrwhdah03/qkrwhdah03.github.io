@@ -18,6 +18,10 @@ nav{
   width:25%;
 }
 
+.welcome{
+  height: 500px;
+}
+
 .mid{
   margin: auto;
   width:100%;
@@ -92,6 +96,10 @@ footer{
   }
   .nav-list {
     width:25%;
+  }
+
+  .welcome{
+    height: 300px;
   }
 
   .mid{
@@ -173,6 +181,9 @@ footer{
     width:25%;
   }
 
+  .welcome{
+    height: 200px;
+  }
 
   .mid{
     margin: auto;

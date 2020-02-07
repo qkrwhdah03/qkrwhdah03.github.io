@@ -12,9 +12,8 @@ header{
     width: 100%;
     height: 75px;
     background-color: white;
-    align: center;
-    border-bottom: 1px solid white;
-    margin: 0;
+    border-bottom: 1px solid #aaa;
+    margin: auto;
     position: fixed;
     display: block;
 }
@@ -169,8 +168,7 @@ footer{
 
 .welcome{
   width: 100%;
-  height: 270px;
-  background-image: url(/image/welcome4.jpg);
+ background-image: url(/image/welcome3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
