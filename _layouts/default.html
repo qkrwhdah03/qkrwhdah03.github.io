@@ -1,21 +1,18 @@
-<!DOCTYPE HTML>
-<html lan="ko">
+<!DOCTYPE html>
+<html>
+
   {% include head.html %}
+
   <body>
+
     {% include header.html %}
-    <div class="whole">
-    {% if page.title=="Home" %}
-      {% include welcome.html %}
-    {% endif %}
-    {% include nav.html %}
-    {% include sidebar.html %}
-    <div class="mid">
-        <div class="section">
-          <br><br>
-          {{ content }}
-        </div>
+
+    <div class="page-content">
+        {{ content }}
     </div>
+
     {% include footer.html %}
-  </div>
+
   </body>
+
 </html>

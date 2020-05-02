@@ -1,11 +1,19 @@
-<header>
-  <a class="open-button" onclick='opensidebar()'><i class="fa fa-navicon" style="font-size: 2em; margin-top:15px;"></i></a>
-  <span style="display:inline; clear:both; font-size: 2em">&nbsp</span>
-  <div class="search">
-  <form class="search-form">
-    <input class="input-text" type="text" placeholder=" Search Tags">
-  </form>
-  &nbsp<a class="search-button" href="#"><i class="fa fa-search"></i></a>&nbsp&nbsp
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="{{ site.baseurl }}/" class="logo">
+      {% if site.logo %}
+      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+      {% else %}
+      <span>{{ site.title }}</span>
+      {% endif %}
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				{% include nav_links.html %}
+      </ul>
+    </nav>
   </div>
-  <br><br>
 </header>
