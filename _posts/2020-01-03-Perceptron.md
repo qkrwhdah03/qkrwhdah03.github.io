@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "퍼셉트론(Perceptron)"
-date: 2020-01-03 12:00:00
+date: 2020-01-01 00:00:00
+pdate: 2020-01-03 12:00:00
 author: qkrwhdah03
 categories: ML
 tags: Machine-Learning
