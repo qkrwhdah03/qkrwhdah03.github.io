@@ -7,12 +7,43 @@ main_nav: true
 
 ![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+<br>
+  <p><b>소개</b></p>
+  <p>대전문정중학교 졸업</p>
+  <p>과학영재학교 대전과학고등학교 입학(우선선발)</p>
+  <p>과학영재학교 대전과학고등학교 재학</p>
+<br>
+  <p>- c/c++, python 주로 사용</p>
+  <p>- java-script, html, css, liquid 등 사용해봄 </p>
+  <p>- CodeUp: qkrwhdah03, BOJ: qkrwhdah03</p>
+<br>
+  <p><b>수상 및 활동</b></p>
+  <p>~2018(고등학교 입학 전)</p>
+<ul>
+  <li>2016 충남대학교 부설 영재원 정보 과목 수강</li>
+  <li>2016 KIMM(과학꿈나무 기계제작 대회) 은상(한국발명진흥회장상) </li>
+  <li>2017 수학올림피아드(KMO) 중등부 지역/전국 장려</li>
+  <li>2017 중학생화학대회(KCHO) 중등부 동상</li>
+  <li>2018 중학생물리대회(KPHO) 중등부 동상</li>
+  <li>2018 수학올림피아드(KMO) 중등부 지역/전국 은상</li>
+</ul>
+  <p>2019</p>
+<ul>
+  <li>2019학년도 1학기 정보 학업우수상</li>
+  <li>2019학년도 2학기 정보 학업우수상</li>
+  <li>2019학년도 2학기 생물 학업우수상</li>
+  <li>교내 CPSC(Creative Problem Solving Competition) 정보 금상(1위)</li>
+  <li>교내 CPSC(Creative Problem Solving Competition) 지구과학 동상(3위)</li>
+  <li>수학올림피아드(KMO) 고등부(오일러부) 1차 동상</li>
+  <li>도시대항국제수학 토너먼트(TOFT) O-level 동상</li>
+  <li>교내 선행상 수상</li>
+  <li>기초자율연구 Quora를 이용한 텍스트 유사도 분석 진행</li>
+  <li>기초자율 연구 포스터 발표대회 투표앱 개발</li>
+  <li>Periagoge 잡지 제작동아리 튜링 기계에 대한 글 작성</li>
+  <li>세종과학실험토론캠프 로봇코딩 진행(라인 트레이서, 문자인식 로봇 제작)</li>
+</ul>
+  <p>2020</p>
+<p>...</p>
+<br>
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
-
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
-
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+<br>
