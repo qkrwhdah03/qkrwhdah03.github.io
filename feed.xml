@@ -6,13 +6,61 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 May 2020 18:12:39 +0900</pubDate>
-    <lastBuildDate>Sun, 03 May 2020 18:12:39 +0900</lastBuildDate>
+    <pubDate>Sun, 03 May 2020 23:07:18 +0900</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 23:07:18 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
+        <title>Codeup 3480 외식의 빗자루</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=3480&quot;&gt;문제 출처&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;-문제-&quot;&gt;&amp;lt; 문제 &amp;gt;&lt;/h3&gt; &lt;p&gt;여느 날처럼 코드업을 즐기고 있던 sean9892는 외식을 하기로 결정했다. sean9892는 외식을 나갈 때에는 외식의 빗자루를 사용하는데, 외식의 빗자루는 시동을 걸 때마다...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/solving/2020/01/01/Codeup-3480.html</link>
+        <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-3480.html</guid>
+        
+        <category>dp</category>
+        
+        
+        <category>Solving</category>
+        
+      </item>
+    
+      <item>
+        <title>Codeup 3180 간단한 문제</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=3180&quot;&gt;문제 출처&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;-문제-&quot;&gt;&amp;lt; 문제 &amp;gt;&lt;/h3&gt; &lt;p&gt;N개의 정수로 이루어진 수열 A1,A2,…,AN 이 주어진다. 아래 두가지 간단한 질의 M를 수행해야 한다. &lt;br /&gt; &lt;br /&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;1 i...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/solving/2020/01/01/Codeup-3180.html</link>
+        <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-3180.html</guid>
+        
+        <category>data-stucture</category>
+        
+        
+        <category>Solving</category>
+        
+      </item>
+    
+      <item>
+        <title>Centrarium Theme에 대해</title>
+        <description>&lt;h3 id=&quot;서론&quot;&gt;서론&lt;/h3&gt; &lt;p&gt;이 Github 블로그에 Centrarium Theme을 적용하기 전에는 내가 직접 Theme을 제작하고 있었다. 블로그를 만드는 김에 HTML, CSS와 같은 기본적인 프론트엔드 문법들을 익히고, 나만의 Theme을 만들어 보려고하였으나, 위의 두...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/etc/2020/01/01/Centrarium.html</link>
+        <guid isPermaLink="true">http://localhost:4000/etc/2020/01/01/Centrarium.html</guid>
+        
+        <category>blog</category>
+        
+        <category>centrarium</category>
+        
+        <category>jekyll</category>
+        
+        <category>github</category>
+        
+        
+        <category>ETC</category>
+        
+      </item>
+    
+      <item>
         <title>Codeup 2103 배수(Hell)</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=2103&quot;&gt;문제 출처&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3&gt;&lt;문제&gt;&lt;/문제&gt;&lt;/h3&gt; &lt;p&gt;하나의 자연수 n (n은 2000000이하)를 입력받아 0과 1로 이루어진 최소의 n배수를 출력하시오.&lt;/p&gt; &lt;h3 id=&quot;-1&quot;&gt;&lt;풀이&gt;&lt;/풀이&gt;&lt;/h3&gt; &lt;p&gt;사실 처음에 굉장히 고민을 많이 했다. &lt;a href=&quot;https://codeup.kr/problem.php?id=2100&quot;&gt;이 문제와 같이&lt;/a&gt;...</description>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=2103&quot;&gt;문제 출처&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;-문제-&quot;&gt;&amp;lt; 문제 &amp;gt;&lt;/h3&gt; &lt;p&gt;하나의 자연수 n (n은 2000000이하)를 입력받아 0과 1로 이루어진 최소의 n배수를 출력하시오.&lt;/p&gt; &lt;hr /&gt; &lt;h3 id=&quot;-풀이-&quot;&gt;&amp;lt; 풀이 &amp;gt;&lt;/h3&gt; &lt;p&gt;사실 처음에 굉장히...</description>
         <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
         <link>http://localhost:4000/solving/2020/01/01/Codeup-2103.html</link>
         <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-2103.html</guid>
@@ -58,7 +106,7 @@
     
       <item>
         <title>콘솔 오목 프로그램</title>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;설명&quot;&gt;설명&lt;/h3&gt; &lt;p&gt;중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스입니다. 흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여 흑백이 번갈아서 수를 놓을 수...</description>
+        <description>&lt;h3 id=&quot;설명&quot;&gt;설명&lt;/h3&gt; &lt;p&gt;중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스이다. 흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여 흑백이 번갈아서 수를 놓을 수 있고, ASDW를...</description>
         <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
         <link>http://localhost:4000/project/2020/01/01/Omoku.html</link>
         <guid isPermaLink="true">http://localhost:4000/project/2020/01/01/Omoku.html</guid>
