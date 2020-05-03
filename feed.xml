@@ -1,30 +1,94 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Study Note</title>
+    <description>Thank you for visiting!
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 03 May 2020 18:12:39 +0900</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 18:12:39 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape | truncatewords: 30 }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Codeup 2103 배수(Hell)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=2103&quot;&gt;문제 출처&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3&gt;&lt;문제&gt;&lt;/문제&gt;&lt;/h3&gt; &lt;p&gt;하나의 자연수 n (n은 2000000이하)를 입력받아 0과 1로 이루어진 최소의 n배수를 출력하시오.&lt;/p&gt; &lt;h3 id=&quot;-1&quot;&gt;&lt;풀이&gt;&lt;/풀이&gt;&lt;/h3&gt; &lt;p&gt;사실 처음에 굉장히 고민을 많이 했다. &lt;a href=&quot;https://codeup.kr/problem.php?id=2100&quot;&gt;이 문제와 같이&lt;/a&gt;...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/solving/2020/01/01/Codeup-2103.html</link>
+        <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-2103.html</guid>
+        
+        <category>search</category>
+        
+        
+        <category>Solving</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Codeup 4887 문명</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=4887&quot;&gt;문제 출처&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;-문제-&quot;&gt;&amp;lt; 문제 &amp;gt;&lt;/h3&gt; &lt;p&gt;인류의 역사를 돌이켜보면, 문명의 발전 은 독자적으로 진행되기도 하지만 서로 다른 문명이 만나 결합되기도 한다. 여러분은 이 가설을 바탕으로, 세계...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/solving/2020/01/01/Codeup-4887.html</link>
+        <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-4887.html</guid>
+        
+        <category>union-find</category>
+        
+        <category>bfs</category>
+        
+        
+        <category>Solving</category>
+        
+      </item>
+    
+      <item>
+        <title>CodeUp 3271 중립국2</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeup.kr/problem.php?id=3271&quot;&gt;문제 출처&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;-문제-&quot;&gt;&amp;lt; 문제 &amp;gt;&lt;/h3&gt; &lt;p&gt;인류가 전쟁을 없애지 않는다면 전쟁이 인류를 없앨 것이다. 하루빨리 전쟁을 없애기 위해 동분서주하고 있는, 세계에서 유일한 중립국의 수석 정보요원인 당신에게...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/solving/2020/01/01/Codeup-3271.html</link>
+        <guid isPermaLink="true">http://localhost:4000/solving/2020/01/01/Codeup-3271.html</guid>
+        
+        <category>union-find</category>
+        
+        <category>path-compression</category>
+        
+        
+        <category>Solving</category>
+        
+      </item>
+    
+      <item>
+        <title>콘솔 오목 프로그램</title>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;설명&quot;&gt;설명&lt;/h3&gt; &lt;p&gt;중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스입니다. 흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여 흑백이 번갈아서 수를 놓을 수...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/project/2020/01/01/Omoku.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/2020/01/01/Omoku.html</guid>
+        
+        <category>omok</category>
+        
+        <category>game</category>
+        
+        <category>c</category>
+        
+        <category>cpp</category>
+        
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>퍼셉트론(Perceptron)</title>
+        <description>&lt;h3 id=&quot;1-퍼셉트론이란&quot;&gt;1) 퍼셉트론이란?&lt;/h3&gt; &lt;p&gt;퍼셉트론은 프랑크 로제블라트가 1975년 고안한 알고리즘으로 오늘날의 신경망의 기원이 되는 알고리즘 입니다. 퍼셉트론은 다음의 그림과 같이 여러개의 신호르 입력을 받아 하나의 신호를 출력하는 구조를 가지고 있습니다. &lt;br...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/ml/2020/01/01/Perceptron.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ml/2020/01/01/Perceptron.html</guid>
+        
+        <category>machine-learning</category>
+        
+        
+        <category>ML</category>
+        
+      </item>
+    
   </channel>
 </rss>
