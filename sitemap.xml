@@ -101,10 +101,7 @@
 <loc>http://localhost:4000/tag/dp/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/sr/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tag/ml/</loc>
+<loc>http://localhost:4000/tag/super-resolution/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/category/ml/</loc>
