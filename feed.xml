@@ -6,9 +6,39 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 May 2020 12:02:02 +0900</pubDate>
-    <lastBuildDate>Mon, 04 May 2020 12:02:02 +0900</lastBuildDate>
+    <pubDate>Wed, 06 May 2020 17:41:47 +0900</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 17:41:47 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Super Resolution에 대해</title>
+        <description>&lt;h3 id=&quot;서론&quot;&gt;서론&lt;/h3&gt; &lt;p&gt;이번에 교내 심화자율연구를 초해상화와 관련한 주제로 진행하게 되어, 연구를 위한 기본적인 배경지식과 선행 연구 논문 등을 찾아서 공부하고 간단하게 정리하여 보았다. 공부한 내용을 정리한 것으로 참고하는 정도로 이용하길...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/project/ml/2020/01/01/SR.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/ml/2020/01/01/SR.html</guid>
+        
+        <category>sr</category>
+        
+        <category>ml</category>
+        
+        
+        <category>Project</category>
+        
+        <category>ML</category>
+        
+      </item>
+    
+      <item>
+        <title>Lazy Propagation</title>
+        <description>&lt;h3 id=&quot;서론&quot;&gt;서론&lt;/h3&gt; &lt;p&gt;Segment Tree는 Query문제에서 구간 Query를 O(log n), 값의 업데이트를 O(log n)에 처리 가능하게 만들어주는 자료구조이다. 하지만, 만약 구간을 업데이트해야 하는 문제가 있다면 어떻게 해야 할까? 단순히 Update를 구간만큼...</description>
+        <pubDate>Wed, 01 Jan 2020 09:00:00 +0900</pubDate>
+        <link>http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html</guid>
+        
+        
+        <category>Algorithm</category>
+        
+      </item>
     
       <item>
         <title>Codeup 3480 외식의 빗자루</title>

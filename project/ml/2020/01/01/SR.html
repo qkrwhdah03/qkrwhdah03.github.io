@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>콘솔 오목 프로그램</title>
-  <meta name="description" content="설명중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스이다.흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를통하여 돌을 놓을 수 있도록 만들었다.코드">
+  <title>Super Resolution에 대해</title>
+  <meta name="description" content="서론이번에 교내 심화자율연구를 초해상화와 관련한 주제로 진행하게 되어,연구를 위한 기본적인 배경지식과 선행 연구 논문 등을 찾아서 공부하고 간단하게 정리하여 보았다. 공부한 내용을 정리한 것으로 참고하는 정도로이용하길 바란다.">
   
   <meta name="author" content="qkrwhdah03">
   <meta name="copyright" content="&copy; qkrwhdah03 2020">
@@ -47,12 +47,12 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="설명중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스이다.흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를통하여 돌을 놓을 수 있도록 만들었다.코드" />
-  <meta property="og:url" content="http://localhost:4000/project/2020/01/01/Omoku.html">
+  <meta property="og:description" content="서론이번에 교내 심화자율연구를 초해상화와 관련한 주제로 진행하게 되어,연구를 위한 기본적인 배경지식과 선행 연구 논문 등을 찾아서 공부하고 간단하게 정리하여 보았다. 공부한 내용을 정리한 것으로 참고하는 정도로이용하길 바란다." />
+  <meta property="og:url" content="http://localhost:4000/project/ml/2020/01/01/SR.html">
   <meta property="og:site_name" content="Study Note" />
-  <meta property="og:title" content="콘솔 오목 프로그램" />
+  <meta property="og:title" content="Super Resolution에 대해" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/instacode.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -61,17 +61,17 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="콘솔 오목 프로그램">
-  <meta name="twitter:description" content="설명중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스이다.흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를통하여 돌을 놓을 수 있도록 만들었다.코드">
-  <meta name="twitter:image" content="http://localhost:4000/assets/instacode.png">
-  <meta name="twitter:url" content="http://localhost:4000/project/2020/01/01/Omoku.html">
+  <meta name="twitter:title" content="Super Resolution에 대해">
+  <meta name="twitter:description" content="서론이번에 교내 심화자율연구를 초해상화와 관련한 주제로 진행하게 되어,연구를 위한 기본적인 배경지식과 선행 연구 논문 등을 찾아서 공부하고 간단하게 정리하여 보았다. 공부한 내용을 정리한 것으로 참고하는 정도로이용하길 바란다.">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000/project/ml/2020/01/01/SR.html">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/project/2020/01/01/Omoku.html">
+  <link rel="canonical" href="http://localhost:4000/project/ml/2020/01/01/SR.html">
 	<link rel="alternate" type="application/rss+xml" title="Study Note" href="http://localhost:4000/feed.xml" />
 
 	<!-- Tooltips -->
@@ -180,10 +180,10 @@
     <div class="page-content">
         <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url(/assets/instacode.png);">
-  <div class="scrim has-cover">
+<div class="post-header-container " >
+  <div class="scrim ">
     <header class="post-header">
-      <h1 class="title">콘솔 오목 프로그램</h1>
+      <h1 class="title">Super Resolution에 대해</h1>
       <p class="info">by <strong>qkrwhdah03</strong></p>
     </header>
   </div>
@@ -191,40 +191,87 @@
 
 <div class="wrapper">
 
-
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
 
 <section class="post-meta">
-  <div class="post-date">2020. 01. 09</div>
+  <div class="post-date">2020. 05. 06</div>
   <div class="post-categories">
   in 
     
-    <a href="/category/Project">Project</a>
+    <a href="/category/Project">Project</a>, 
+    
+  
+    
+    <a href="/category/ML">ML</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <h3 id="설명">설명</h3>
-<p>중학교 3학년 겨울방학 때 처음 만들어본 콘솔 오목 프로그램 소스이다.
-흑의 3x3과 같은 금수는 막지 않은 상태이고, 기본적으로 흑이 먼저 시작하여
-흑백이 번갈아서 수를 놓을 수 있고, ASDW를 사용하여 커서를 움직이고 스페이스바를
-통하여 돌을 놓을 수 있도록 만들었다.</p>
+  <h3 id="서론">서론</h3>
+<p>이번에 교내 심화자율연구를 초해상화와 관련한 주제로 진행하게 되어,
+연구를 위한 기본적인 배경지식과 선행 연구 논문 등을 찾아서 공부하고 간단하게 정리하여 보았다. 공부한 내용을 정리한 것으로 참고하는 정도로
+이용하길 바란다.</p>
 <hr />
 
-<p><br /></p>
-<h3 id="코드">코드</h3>
+<h3 id="초해상화-super-resolution">초해상화 (Super Resolution)</h3>
+<p>초해상화는 컴퓨터 비전 분야 중의 하나로, 말 그래도 낮은 해상도의 이미지, 영상 등을 높은 해상도로 복원, 처리하는 영상처리 기술을 의미한다. 특히, 이미지의 경우 크게 하나의 이미지를 사용하는 경우 SISR(Single Image Super Resolution), 여러 개의 이미지를 사용하는 경우 MISR(Multi Image Super Resolution)으로 나뉘어 부르기도 한다.   <br />
+처음에는 단순한 보간법(Interpolation)에서 시작이 되었고, 최근에는 이러한 초해상화에 여러가지 기계학습, 딥러닝을 적용하여 엄청난 성과를 보여주고 있다. 대표적인 것만 SRCNN, SRGAN 등 정말 많은 모델들이 연구되고 있다. 다음은 Reference <a href="https://arxiv.org/pdf/1904.07523.pdf">[2]</a> 의 이미지를 가지고 온 것이다.  <br />
+<br /></p>
 
-<p>총 311줄로, <br />
-코드가 포스트에 넣기에는 길어 링크로 남긴다.<br />
-풀 코드는 다음 사이트에서 볼 수 있다. <br /><br /></p>
+<p><a href="/assets/post_image/typeofsr.png" data-lightbox="typeofsr" data-title="Variety of SR Model"><img src="/assets/post_image/typeofsr.png" alt="SR의 종류" width="80%" height="80%" /></a>
+<br /></p>
 
-<p><a href="https://github.com/qkrwhdah03/qkrwhdah03/blob/master/Omoku.cpp" title="전체 코드">오목 코드 : To Github</a></p>
 <hr />
 
-<p><br /></p>
-<h3 id="실행화면">실행화면</h3>
-<p><img src="/assets/post_image/omok.PNG" alt="omok.png" width="70%" height="70%" /></p>
+<h3 id="framework-of-sisr-models">Framework of SISR Models</h3>
+<p>Reference <a href="https://arxiv.org/pdf/1808.03344.pdf">[1]</a>을 참고해보면, 일반적인 SISR Model들의 연구는 다음과 같은
+Framework를 따른다고 한다.
+<img src="/assets/post_image/srframework.png" alt="SR Framework" /></p>
+
+<p>기존의 HR(High Resolution)이미지를 Target(Gound Truth)로 하여 Downsampling을 하고, Noise를 추가하여 LR(Low Resolution)의 이미지로 만들고, 이 LR 이미지를 어떠한 과정을 통해 다시 HR 이미지로 복원하는 것이다. 여기서 말하는 어떠한 과정이 바로 SISR의 Method가 되는 것이다.</p>
+
+<hr />
+
+<h3 id="ssir-알고리즘의-분류">SSIR 알고리즘의 분류</h3>
+<p>일반적으로 이러한 SSIR 주류 알고리즘은 크게 3가지 분류로 나눌 수 있다. 바로, Interpolation-based, Reconstruction-based, Learning-based Method이다.</p>
+
+<h4 id="--interpolation-based-method">- Interpolation-based Method</h4>
+<p>보간법 기반의 Method는 일반적으로 매우 빠르고, 직관적이라는 장점이 있지만, 고화질의 이미지를 복원하는데에는 어느정도 한계가 있다. 대표적으로 Bicubic-Interpolation, Lanczos Resampling 등이 있다고 알려져있다.    <br /></p>
+<h4 id="--reconstruction-based-method">- Reconstruction-based Method</h4>
+<p>Reconstruction-based Method는 유연하고 선명한 이미지의 생성이라는 장점이 있지만, 이미지 Scale Factor가 커지면 이러한 Method들은 일반적으로 시간이 오래 걸린다고 한다.  <br /></p>
+<h4 id="--learning-based-method">- Learning-based Method</h4>
+<p>Learning-based Method(a.k.a Example-based Method)는 빠른 계산과 눈에 띄는 성능으로 주목을 받았다. 이러한 Method들은 대게 LR 이미지와 HR 이미지 사이의 통계적 관계를 분석하기 위해 머신러닝 알고리즘을 활용한다. <br />
+<br />
+이러한 모델들은 나중에 따로 논문을 정리해서 포스팅하도록 하겠다.</p>
+<hr />
+
+<h3 id="sr-모델의-성능-평가">SR 모델의 성능 평가</h3>
+<p>SR 문제는 흔히 Ill-Posed Problem이라고 불리는데, 이는 하나의 입력에 대해 여러개의 답이 나올 수 있다는 것을 의미한다. 즉, 낮은 해상도의 이미지, 영상을 넣었을때 나올 수 있는 고화질의 이미지들은 정말 많을 것이다. 그렇다면 이러한 SR 모델의 성능은 어떻게 평가할 수 있을까?   <br />
+일반적으로 원본 이미지에 대한 다음의 두 척도를 이용한다.</p>
+<h4 id="1-psnr-peak-signal-to-noise-ratio">1. PSNR (Peak Signal-to-Noise Ratio)</h4>
+<p>굳이 번역하자면 <em>최대 신호 대 잡음 비</em> 라고 할 수 있다. 다음의 식으로 표현된다.  <br />
+<img src="/assets/post_image/psnr.png" alt="PSNR" /></p>
+
+<p>MSE는 우리가 흔히 알고있는 Mean-Squared-Error을 의미한다. 여기서 ||.||2의 의미는 Frobenius Norm(a.k.a Euclidean Norm)은 L2-Norm을 의미한다. 또, L은 최대 신호를 의미하고 이미지에서는 일반적으로 255의 값을 갖는다.
+MSE가 작을수록 이미지의 복원 정도가 높은 것이므로 PSNR의 값이 크면 클수록 성능이 좋다고 판단할 수 있다. 단위는 dB을 사용한다.</p>
+<h4 id="2-ssim-structural-similarity-index">2. SSIM (Structural Similarity Index)</h4>
+<p><em>구조적 유사도 지수</em> 은 Zhou Wang 교수와 Alan C. Bovik 교수가 주축으로 개발한 이미지 품질 평가(image quality assessment) 지수로 사람 시각 시스템의 특성을 고려하여 제작하였다. 두 이미지(x,y)의 평균 밝기, 콘트라스트, 구조 비교를 비교하여 하나의 수치로 만들어냈다.
+<img src="/assets/post_image/ssim1.png" alt="ssim1" />
+이 식들의 모두 곱하여 최종적으로 다음과 같이 SSIM 지수를 구할 수 있다.
+<img src="/assets/post_image/ssim2.png" alt="ssim2" />
+여기서 mu는 해당 이미지의 평균, sigma는 해당 이미지의 표준편차, simga(x,y)는 두 이미지의 공분산, C로 표현된 것은 안정화 상수를 의미한다.</p>
+<hr />
+
+<h3 id="reference">Reference</h3>
+<p>[1]<a href="https://arxiv.org/pdf/1808.03344.pdf" title="SR 관련 Overview 논문1">Deep Learning for Single Image Super-Resolution: A Brief Review Yang et al. 2018</a>     <br />
+[2]<a href="https://arxiv.org/pdf/1904.07523.pdf" title="SR 관련 Overview 논문2">A Deep Journey into Super-resolution: A Survey Anwar et al. 2019</a>     <br />
+[3] Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli. Image quality assessment: from error visibility to structural similarity. IEEE transactions on image processing, 13(4):600, 2004.</p>
 <hr />
 
 
@@ -233,7 +280,7 @@
 
 
 <section class="tags">
-  <strong>Tags:</strong> <a href="/tag/omok">Omok</a>,&nbsp;<a href="/tag/game">Game</a>,&nbsp;<a href="/tag/c">C</a>,&nbsp;<a href="/tag/cpp">Cpp</a>
+  <strong>Tags:</strong> <a href="/tag/sr">Sr</a>,&nbsp;<a href="/tag/ml">Ml</a>
 </section>
 
 
@@ -257,7 +304,7 @@
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=%EC%BD%98%EC%86%94+%EC%98%A4%EB%AA%A9+%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&u=http%3A%2F%2Flocalhost%3A4000%2Fproject%2F2020%2F01%2F01%2FOmoku.html"
+      <a href="//www.facebook.com/sharer.php?t=Super+Resolution%EC%97%90+%EB%8C%80%ED%95%B4&u=http%3A%2F%2Flocalhost%3A4000%2Fproject%2Fml%2F2020%2F01%2F01%2FSR.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -319,7 +366,7 @@
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=%EC%BD%98%EC%86%94+%EC%98%A4%EB%AA%A9+%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&url=http%3A%2F%2Flocalhost%3A4000%2Fproject%2F2020%2F01%2F01%2FOmoku.html&media=http://localhost:4000/assets/instacode.png"
+      <a href="//www.pinterest.com/pin/create/button/?description=Super+Resolution%EC%97%90+%EB%8C%80%ED%95%B4&url=http%3A%2F%2Flocalhost%3A4000%2Fproject%2Fml%2F2020%2F01%2F01%2FSR.html&media=http://localhost:4000/assets/header_image.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -388,7 +435,7 @@
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/project/2020/01/01/Omoku.html') + '&title=콘솔 오목 프로그램'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/project/ml/2020/01/01/SR.html') + '&title=Super Resolution에 대해'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
@@ -408,24 +455,16 @@
 	<section class="post-navigation">
 		<span class="prev-post">
 			
-				<a href="/ml/2020/01/01/Perceptron.html">
+				<a href="/algorithm/2020/01/01/Lazy-Propagation.html">
 					<span class="fa-stack fa-lg">
 						<i class="fa fa-square fa-stack-2x"></i>
 						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
 					</span>
-					<span class="page-number">퍼셉트론(Perceptron)</span>
+					<span class="page-number">Lazy Propagation</span>
 				</a>
 			
 		</span>
 		<span class="next-post">
-			
-				<a href="/solving/2020/01/01/Codeup-3271.html">
-					<span class="page-number">CodeUp 3271 중립국2</span>
-					<span class="fa-stack fa-lg">
-						<i class="fa fa-square fa-stack-2x"></i>
-						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-					</span>
-				</a>
 			
 		</span>
 	</section>

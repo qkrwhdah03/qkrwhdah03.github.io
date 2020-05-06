@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts</title>
-  <meta name="description" content="Thank you for visiting!
-">
+  <title>Lazy Propagation</title>
+  <meta name="description" content="서론Segment Tree는 Query문제에서  구간 Query를 O(log n), 값의 업데이트를 O(log n)에 처리 가능하게 만들어주는 자료구조이다.하지만, 만약 구간을 업데이트해야 하는 문제가 있다면 어떻게 해야 할까? 단순히 Update를 구간만큼 반복한다면, O(nlo...">
   
   <meta name="author" content="qkrwhdah03">
   <meta name="copyright" content="&copy; qkrwhdah03 2020">
@@ -48,11 +47,10 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Thank you for visiting!
-" />
-  <meta property="og:url" content="http://localhost:4000/posts/">
+  <meta property="og:description" content="서론Segment Tree는 Query문제에서  구간 Query를 O(log n), 값의 업데이트를 O(log n)에 처리 가능하게 만들어주는 자료구조이다.하지만, 만약 구간을 업데이트해야 하는 문제가 있다면 어떻게 해야 할까? 단순히 Update를 구간만큼 반복한다면, O(nlo..." />
+  <meta property="og:url" content="http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html">
   <meta property="og:site_name" content="Study Note" />
-  <meta property="og:title" content="Posts" />
+  <meta property="og:title" content="Lazy Propagation" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
@@ -63,18 +61,17 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Thank you for visiting!
-">
+  <meta name="twitter:title" content="Lazy Propagation">
+  <meta name="twitter:description" content="서론Segment Tree는 Query문제에서  구간 Query를 O(log n), 값의 업데이트를 O(log n)에 처리 가능하게 만들어주는 자료구조이다.하지만, 만약 구간을 업데이트해야 하는 문제가 있다면 어떻게 해야 할까? 단순히 Update를 구간만큼 반복한다면, O(nlo...">
   <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
-  <meta name="twitter:url" content="http://localhost:4000/posts/">
+  <meta name="twitter:url" content="http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/posts/">
+  <link rel="canonical" href="http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html">
 	<link rel="alternate" type="application/rss+xml" title="Study Note" href="http://localhost:4000/feed.xml" />
 
 	<!-- Tooltips -->
@@ -181,119 +178,266 @@
 
 
     <div class="page-content">
-        <div class="wrapper">
-<div class="page">
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Posts</h1>
-  </header>
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Lazy Propagation</h1>
+      <p class="info">by <strong>qkrwhdah03</strong></p>
+    </header>
+  </div>
+</div>
 
-  <span class="page-divider">
+<div class="wrapper">
+
+ <span class="page-divider">
   <span class="one"></span>
   <span class="two"></span>
 </span>
+ 
 
-
-  <article class="post-content">
+<section class="post-meta">
+  <div class="post-date">2020. 05. 04</div>
+  <div class="post-categories">
+  in 
     
-<h2 id="ML">ML</h2>
-<ul class="posts-list">
+    <a href="/category/Algorithm">Algorithm</a>
+    
   
-    <li>
-      <strong>
-        <a href="/project/ml/2020/01/01/SR.html">-Super Resolution에 대해</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/ml/2020/01/01/Perceptron.html">-퍼셉트론(Perceptron)</a>
-      </strong>
-    </li>
-  
-  </ul>
+  </div>
+</section>
+
+<article class="post-content">
+  <h3 id="서론">서론</h3>
+<p>Segment Tree는 Query문제에서  구간 Query를 O(log n), 값의 업데이트를 O(log n)에 처리 가능하게 만들어주는 자료구조이다.
+하지만, 만약 구간을 업데이트해야 하는 문제가 있다면 어떻게 해야 할까? 단순히 Update를 구간만큼 반복한다면, O(nlog n)의
+시간 복잡도로 n이 충분히 큰 경우 시간초과를 피하진 못할 것이다. 이런 상황에서 사용할 수 있는 방법이 바로 Lazy Propagation이다.</p>
 <hr />
 
-<h2 id="Project">Project</h2>
-<ul class="posts-list">
-  
-    <li>
-      <strong>
-        <a href="/project/ml/2020/01/01/SR.html">-Super Resolution에 대해</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/project/2020/01/01/Omoku.html">-콘솔 오목 프로그램</a>
-      </strong>
-    </li>
-  
-  </ul>
-<hr />
+<p>나중에 추가하겠다…지금 바쁘다…</p>
 
-<h2 id="Solving">Solving</h2>
-<ul class="posts-list">
-  
-    <li>
-      <strong>
-        <a href="/solving/2020/01/01/Codeup-3480.html">-Codeup 3480 외식의 빗자루</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/solving/2020/01/01/Codeup-3180.html">-Codeup 3180 간단한 문제</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/solving/2020/01/01/Codeup-2103.html">-Codeup 2103 배수(Hell)</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/solving/2020/01/01/Codeup-4887.html">-Codeup 4887 문명</a>
-      </strong>
-    </li>
-  
-    <li>
-      <strong>
-        <a href="/solving/2020/01/01/Codeup-3271.html">-CodeUp 3271 중립국2</a>
-      </strong>
-    </li>
-  
-  </ul>
-<hr />
+</article>
 
-<h2 id="ETC">ETC</h2>
-<ul class="posts-list">
-  
-    <li>
-      <strong>
-        <a href="/etc/2020/01/01/Centrarium.html">-Centrarium Theme에 대해</a>
-      </strong>
-    </li>
-  
-  </ul>
-<hr />
 
-<h2 id="Algorithm">Algorithm</h2>
-<ul class="posts-list">
-  
-    <li>
-      <strong>
-        <a href="/algorithm/2020/01/01/Lazy-Propagation.html">-Lazy Propagation</a>
-      </strong>
-    </li>
-  
-  </ul>
 
-<p><br /></p>
 
-  </article>
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=Lazy+Propagation&u=http%3A%2F%2Flocalhost%3A4000%2Falgorithm%2F2020%2F01%2F01%2FLazy-Propagation.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=Lazy+Propagation&url=http%3A%2F%2Flocalhost%3A4000%2Falgorithm%2F2020%2F01%2F01%2FLazy-Propagation.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html') + '&title=Lazy Propagation'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+	<section class="post-navigation">
+		<span class="prev-post">
+			
+				<a href="/solving/2020/01/01/Codeup-3480.html">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="page-number">Codeup 3480 외식의 빗자루</span>
+				</a>
+			
+		</span>
+		<span class="next-post">
+			
+				<a href="/project/ml/2020/01/01/SR.html">
+					<span class="page-number">Super Resolution에 대해</span>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+			
+		</span>
+	</section>
+
+
+<br>
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://qkrwhdah03-github-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</br>
 
 </div>
 </div>
