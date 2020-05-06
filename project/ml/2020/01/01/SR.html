@@ -232,7 +232,7 @@
 <h3 id="framework-of-sisr-models">Framework of SISR Models</h3>
 <p>Reference <a href="https://arxiv.org/pdf/1808.03344.pdf">[1]</a>을 참고해보면, 일반적인 SISR Model들의 연구는 다음과 같은
 Framework를 따른다고 한다.
-<img src="/assets/post_image/srframework.png" alt="SR Framework" /></p>
+<a href="/assets/post_image/srframework.png" data-lightbox="srframework" data-title="Framework of SISR"><img src="/assets/post_image/srframework.png" alt="SR Framework" /></a></p>
 
 <p>기존의 HR(High Resolution)이미지를 Target(Gound Truth)로 하여 Downsampling을 하고, Noise를 추가하여 LR(Low Resolution)의 이미지로 만들고, 이 LR 이미지를 어떠한 과정을 통해 다시 HR 이미지로 복원하는 것이다. 여기서 말하는 어떠한 과정이 바로 SISR의 Method가 되는 것이다.</p>
 
@@ -256,15 +256,15 @@ Framework를 따른다고 한다.
 일반적으로 원본 이미지에 대한 다음의 두 척도를 이용한다.</p>
 <h4 id="1-psnr-peak-signal-to-noise-ratio">1. PSNR (Peak Signal-to-Noise Ratio)</h4>
 <p>굳이 번역하자면 <em>최대 신호 대 잡음 비</em> 라고 할 수 있다. 다음의 식으로 표현된다.  <br />
-<img src="/assets/post_image/psnr.png" alt="PSNR" /></p>
+<a href="/assets/post_image/psnr.png" data-lightbox="psnr" data-title="PSNR"><img src="/assets/post_image/psnr.png" alt="PSNR" /></a></p>
 
 <p>MSE는 우리가 흔히 알고있는 Mean-Squared-Error을 의미한다. 여기서 ||.||2의 의미는 Frobenius Norm(a.k.a Euclidean Norm)은 L2-Norm을 의미한다. 또, L은 최대 신호를 의미하고 이미지에서는 일반적으로 255의 값을 갖는다.
 MSE가 작을수록 이미지의 복원 정도가 높은 것이므로 PSNR의 값이 크면 클수록 성능이 좋다고 판단할 수 있다. 단위는 dB을 사용한다.</p>
 <h4 id="2-ssim-structural-similarity-index">2. SSIM (Structural Similarity Index)</h4>
 <p><em>구조적 유사도 지수</em> 은 Zhou Wang 교수와 Alan C. Bovik 교수가 주축으로 개발한 이미지 품질 평가(image quality assessment) 지수로 사람 시각 시스템의 특성을 고려하여 제작하였다. 두 이미지(x,y)의 평균 밝기, 콘트라스트, 구조 비교를 비교하여 하나의 수치로 만들어냈다.
-<img src="/assets/post_image/ssim1.png" alt="ssim1" />
+<a href="/assets/post_image/ssim1.png" data-lightbox="ssim1" data-title="SSIM"><img src="/assets/post_image/ssim1.png" alt="ssim1" /></a>
 이 식들의 모두 곱하여 최종적으로 다음과 같이 SSIM 지수를 구할 수 있다.
-<img src="/assets/post_image/ssim2.png" alt="ssim2" />
+<a href="/assets/post_image/ssim2.png" data-lightbox="ssim2" data-title="SSIM"><img src="/assets/post_image/ssim2.png" alt="ssim2" /></a>
 여기서 mu는 해당 이미지의 평균, sigma는 해당 이미지의 표준편차, simga(x,y)는 두 이미지의 공분산, C로 표현된 것은 안정화 상수를 의미한다.</p>
 <hr />
 
