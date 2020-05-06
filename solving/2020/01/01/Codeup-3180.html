@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Codeup 3180 간단한 문제</title>
+  <meta name="description" content="문제 출처">
+  
+  <meta name="author" content="qkrwhdah03">
+  <meta name="copyright" content="&copy; qkrwhdah03 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai.min.css"-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!--시험삼아  -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/monokai_sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="문제 출처" />
+  <meta property="og:url" content="http://localhost:4000/solving/2020/01/01/Codeup-3180.html">
+  <meta property="og:site_name" content="Study Note" />
+  <meta property="og:title" content="Codeup 3180 간단한 문제" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Codeup 3180 간단한 문제">
+  <meta name="twitter:description" content="문제 출처">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000/solving/2020/01/01/Codeup-3180.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/solving/2020/01/01/Codeup-3180.html">
+	<link rel="alternate" type="application/rss+xml" title="Study Note" href="http://localhost:4000/feed.xml" />
+
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="Study Note">
+    <!- 로고 이미지 넣고 싶으면 위에 주석 해제 후 꺽쇠 넣어주기, a tag class를 logo로 바꿔 -->
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				<li class="nav-link"><a href="/">Home</a>
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/Nothing/">Nothing</a>
+	
+
+	
+	<li class="nav-link"><a href="/More/">More</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">Codeup 3180 간단한 문제</h1>
+      <p class="info">by <strong>qkrwhdah03</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">2020. 05. 03</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/Solving">Solving</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <p><a href="https://codeup.kr/problem.php?id=3180">문제 출처</a><br /><br /></p>
+
+<h3 id="-문제-">&lt; 문제 &gt;</h3>
+<p>N개의 정수로 이루어진 수열 A1,A2,…,AN 이 주어진다. 아래 두가지 간단한 질의 M를 수행해야 한다.  <br />
+<br /></p>
+<ul>
+  <li>1 i j x : Al,Al+1,…,Ar 중 x와 같은 원소의 개수를 출력한다.</li>
+  <li>2 i x : Ai 를 x로 바꾼다.</li>
+</ul>
+
+<h5 id="입력">입력</h5>
+<p>첫째 줄에 수열의 길이 N이 주어진다. (1 ≤ N ≤ 3∗10^5)  <br />
+둘째 줄에 A1,A2,…,AN이 주어진다. (−10^9 ≤ Ai ≤ 10^9)  <br />
+셋째 줄에 질의의 개수 M이 주어진다, (1 ≤ M ≤ 3∗10^5)  <br />
+넷째 줄부터 쿼리가 한줄에 하나씩 주어진다. (1 ≤ i ≤ j ≤ N,−10^9 ≤ x ≤10^9)</p>
+<h5 id="출력">출력</h5>
+<p>각각의 1번 질의마다 정답을 한줄에 하나씩 출력한다.</p>
+<hr />
+
+<h3 id="-풀이-1-">&lt; 풀이 1 &gt;</h3>
+<p>정말 아이디어가 떠오르지 않아서, 1번 Query는 O(log n), 2번 Query는 O(n)에 처리하는
+형식의 반점짜리 풀이를 사용했다. 근데, 테스트 케이스가 약했는지 800ms 정도가 되어 정풀이 떠버리는 참사가 발생했다.  <br />
+어쨌든, 일단 풀이를 소개하겠다. 일단, map&lt;int, vector<int>&gt; 를 사용하여 특정 수 k가 있는 index x를
+vector map[k]에 push해준다. 그러면 각 map의 vector에는 특정 수가 들어있는 좌표들이 오름차순으로
+정렬되어 있는 상태이다. 그러면 1번 Query는 upper_bound와 lower_bound를 이용해서 해당 시작범위 이상, 끝 범위 초과과인 것들의 개수를 둘의 차이를 통해 구할 수 있다. 하지만, 2번 Query는 vector에 중간 삽입, 삭제를 해야하므로
+O(n)의 시간복잡도가 되어버린다.</int></p>
+<hr />
+
+<h3 id="-코드-1-">&lt; 코드 1 &gt;</h3>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">#include &lt;iostream&gt;
+</span>  <span class="cp">#include &lt;map&gt;
+</span>  <span class="cp">#include &lt;vector&gt;
+</span>  <span class="cp">#include &lt;algorithm&gt;
+</span>
+  <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">;</span>
+  <span class="n">map</span> <span class="o">&lt;</span><span class="kt">int</span> <span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">tree</span><span class="p">;</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">arr</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+  <span class="p">{</span>
+  	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+  	<span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+  	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+  	<span class="n">arr</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">5</span><span class="p">);</span>
+  	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+  		<span class="kt">int</span> <span class="n">tmp</span><span class="p">;</span>
+  		<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">tmp</span><span class="p">;</span>
+  		<span class="n">tree</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  		<span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">tmp</span><span class="p">;</span>
+  	<span class="p">}</span>
+  	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">;</span>
+  	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+  		<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">t</span><span class="p">;</span>
+  		<span class="k">if</span><span class="p">(</span><span class="n">t</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+  			<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="o">&gt;&gt;</span><span class="n">b</span><span class="o">&gt;&gt;</span><span class="n">c</span><span class="p">;</span>
+  			<span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="n">lower_bound</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">begin</span><span class="p">(),</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">end</span><span class="p">(),</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">begin</span><span class="p">();</span> <span class="c1">//O(logn)</span>
+  			<span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">begin</span><span class="p">(),</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">end</span><span class="p">(),</span><span class="n">b</span><span class="p">)</span><span class="o">-</span><span class="n">tree</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">begin</span><span class="p">();</span> <span class="c1">// O(logn)</span>
+  			<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">&lt;&lt;</span><span class="sc">'\n'</span><span class="p">;</span>
+  		<span class="p">}</span>
+  		<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">t</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+  			<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="o">&gt;&gt;</span><span class="n">b</span><span class="p">;</span>
+  			<span class="kt">int</span> <span class="n">tmp</span><span class="o">=</span><span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="p">];</span>
+  			<span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+  			<span class="n">tree</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">erase</span><span class="p">(</span><span class="n">lower_bound</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">begin</span><span class="p">(),</span><span class="n">tree</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">end</span><span class="p">(),</span><span class="n">a</span><span class="p">));</span> <span class="c1">// O(n)</span>
+  			<span class="n">tree</span><span class="p">[</span><span class="n">b</span><span class="p">].</span><span class="n">insert</span><span class="p">(</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">b</span><span class="p">].</span><span class="n">begin</span><span class="p">(),</span><span class="n">tree</span><span class="p">[</span><span class="n">b</span><span class="p">].</span><span class="n">end</span><span class="p">(),</span><span class="n">a</span><span class="p">),</span><span class="n">a</span><span class="p">);</span> <span class="c1">//O(n)</span>
+  		<span class="p">}</span>
+  	<span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+<hr />
+
+<h3 id="-풀이-2-">&lt; 풀이 2 &gt;</h3>
+<p>이 문제를 풀기위해서는 앞선 풀이에서 설명했듯이 O(log n)에 탐색이 가능하고, O(log n)에 중간 삽입, 삭제가 가능한
+형태의 알고리즘 혹은 자료구조를 사용해야한다. 정말 놀라운 것은 이런 어마어마한 자료구조가 존재했다. <br />
+바로, PBDS(Policy Based Data Structure)이다.  <br />
+<a href="https://codeforces.com/blog/entry/11080" title="PBDS in Codeforces">여기서 처음 알게되었다.</a>  <br />
+이 자료구조를 이용하면 간단히 upper_bound만 구현하면 문제가 풀려버린다.</p>
+<hr />
+
+<h3 id="-코드-2-">&lt; 코드 2 &gt;</h3>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">#include &lt;iostream&gt;
+</span>  <span class="cp">#include &lt;map&gt;
+</span>  <span class="cp">#include &lt;vector&gt;
+</span>  <span class="cp">#include &lt;algorithm&gt;
+</span>  <span class="cp">#include &lt;ext/pb_ds/assoc_container.hpp&gt;
+</span>  <span class="cp">#include &lt;ext/pb_ds/tree_policy.hpp&gt;
+</span>  <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+  <span class="k">using</span> <span class="k">namespace</span> <span class="n">__gnu_pbds</span><span class="p">;</span>
+
+  <span class="k">typedef</span> <span class="n">tree</span><span class="o">&lt;</span>
+  <span class="kt">int</span><span class="p">,</span>
+  <span class="n">null_type</span><span class="p">,</span>
+  <span class="n">less</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">rb_tree_tag</span><span class="p">,</span>
+  <span class="n">tree_order_statistics_node_update</span><span class="o">&gt;</span>
+  <span class="n">ordered_set</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">300001</span><span class="p">];</span>
+  <span class="n">map</span><span class="o">&lt;</span> <span class="kt">int</span><span class="p">,</span> <span class="n">ordered_set</span> <span class="o">&gt;</span> <span class="n">h</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="nf">upper_bound</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="p">){</span>
+  	<span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">size</span><span class="p">();</span>
+  	<span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  	<span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;</span><span class="n">r</span><span class="p">){</span>
+  		<span class="kt">int</span> <span class="n">mid</span><span class="o">=</span><span class="p">(</span><span class="n">l</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+  		<span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">h</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">find_by_order</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">)</span> <span class="n">r</span><span class="o">=</span><span class="n">mid</span><span class="p">;</span>
+  		<span class="k">else</span> <span class="n">l</span><span class="o">=</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+  	<span class="p">}</span>
+  	<span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+  <span class="p">{</span>
+  	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+  	<span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+  	<span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+  	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+  	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+  		<span class="kt">int</span> <span class="n">tmp</span><span class="p">;</span>
+  		<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">tmp</span><span class="p">;</span>
+  		<span class="n">h</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  		<span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">tmp</span><span class="p">;</span>
+  	<span class="p">}</span>
+  	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">;</span>
+  	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+  		<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">t</span><span class="p">;</span>
+  		<span class="k">if</span><span class="p">(</span><span class="n">t</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+  			<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="o">&gt;&gt;</span><span class="n">b</span><span class="o">&gt;&gt;</span><span class="n">c</span><span class="p">;</span>
+  			<span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="n">h</span><span class="p">[</span><span class="n">c</span><span class="p">].</span><span class="n">order_of_key</span><span class="p">(</span><span class="n">a</span><span class="p">);</span> <span class="c1">// lower_bound</span>
+  			<span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+  			<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">&lt;&lt;</span><span class="sc">'\n'</span><span class="p">;</span>
+  		<span class="p">}</span>
+  		<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">t</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+  			<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="o">&gt;&gt;</span><span class="n">b</span><span class="p">;</span>
+  			<span class="kt">int</span> <span class="n">tmp</span><span class="o">=</span><span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="p">];</span>
+  			<span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">=</span><span class="n">b</span><span class="p">;</span>
+  			<span class="n">h</span><span class="p">[</span><span class="n">tmp</span><span class="p">].</span><span class="n">erase</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+  			<span class="n">h</span><span class="p">[</span><span class="n">b</span><span class="p">].</span><span class="n">insert</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+  		<span class="p">}</span>
+  	<span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+<hr />
+
+
+</article>
+
+
+
+<section class="tags">
+  <strong>Tags:</strong> <a href="/tag/data-stucture">Data-stucture</a>
+</section>
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=Codeup+3180+%EA%B0%84%EB%8B%A8%ED%95%9C+%EB%AC%B8%EC%A0%9C&u=http%3A%2F%2Flocalhost%3A4000%2Fsolving%2F2020%2F01%2F01%2FCodeup-3180.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=Codeup+3180+%EA%B0%84%EB%8B%A8%ED%95%9C+%EB%AC%B8%EC%A0%9C&url=http%3A%2F%2Flocalhost%3A4000%2Fsolving%2F2020%2F01%2F01%2FCodeup-3180.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/solving/2020/01/01/Codeup-3180.html') + '&title=Codeup 3180 간단한 문제'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+	<section class="post-navigation">
+		<span class="prev-post">
+			
+				<a href="/etc/2020/01/01/Centrarium.html">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="page-number">Centrarium Theme에 대해</span>
+				</a>
+			
+		</span>
+		<span class="next-post">
+			
+				<a href="/solving/2020/01/01/Codeup-3480.html">
+					<span class="page-number">Codeup 3480 외식의 빗자루</span>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+			
+		</span>
+	</section>
+
+
+<br>
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://qkrwhdah03-github-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</br>
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Study Note</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+				<li class="nav-link"><a href="/">Home</a>
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/Nothing/">Nothing</a>
+	
+
+	
+	<li class="nav-link"><a href="/More/">More</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:qkrwhdah03@naver.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">qkrwhdah03@naver.com</span>
+          </a>
+        </li>
+
+        
+          
+        
+          
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100027786906347" title="Friend me on Facebook">
+              <i class="fa fa-facebook"></i>
+              <span class="username">qkrwhdah03</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://github.com/qkrwhdah03" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">qkrwhdah03</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://codeup.kr/userinfo.php?user=qkrwhdah03" title="Connect with me on Codeup">
+              <i class="fa fa-globe"></i>
+              <span class="username">Codeup</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.acmicpc.net/user/qkrwhdah03" title="Connect with me on BOJ">
+              <i class="fa fa-globe"></i>
+              <span class="username">BOJ</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">Thank you for visiting!
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>
