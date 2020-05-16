@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>path-compression</title>
-  <meta name="description" content="Thank you for visiting!
-">
+  <title>다익스트라 알고리즘(Dijkstra Algorithm)</title>
+  <meta name="description" content="서론그래프에서 최단 경로를 구하는 알고리즘이라고 한다면 대표적으로 플로이드-와샬 알고리즘, 다익스트라 알고리즘 등이 있다. 플로이드-와샬의 경우임의의 두 정점에 대한 최단경로 값을 O(v^3)의 시간복잡도로 구할 수 있도록 하는 알고리즘 이었다.이번 시간에는 한 정점에서 나머지 정...">
   
   <meta name="author" content="qkrwhdah03">
   <meta name="copyright" content="&copy; qkrwhdah03 2020">
@@ -48,11 +47,10 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="Thank you for visiting!
-" />
-  <meta property="og:url" content="http://localhost:4000/tag/path-compression/">
+  <meta property="og:description" content="서론그래프에서 최단 경로를 구하는 알고리즘이라고 한다면 대표적으로 플로이드-와샬 알고리즘, 다익스트라 알고리즘 등이 있다. 플로이드-와샬의 경우임의의 두 정점에 대한 최단경로 값을 O(v^3)의 시간복잡도로 구할 수 있도록 하는 알고리즘 이었다.이번 시간에는 한 정점에서 나머지 정..." />
+  <meta property="og:url" content="http://localhost:4000/algorithm/2020/01/01/Dijkstra.html">
   <meta property="og:site_name" content="Study Note" />
-  <meta property="og:title" content="path-compression" />
+  <meta property="og:title" content="다익스트라 알고리즘(Dijkstra Algorithm)" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
@@ -63,18 +61,17 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="path-compression">
-  <meta name="twitter:description" content="Thank you for visiting!
-">
+  <meta name="twitter:title" content="다익스트라 알고리즘(Dijkstra Algorithm)">
+  <meta name="twitter:description" content="서론그래프에서 최단 경로를 구하는 알고리즘이라고 한다면 대표적으로 플로이드-와샬 알고리즘, 다익스트라 알고리즘 등이 있다. 플로이드-와샬의 경우임의의 두 정점에 대한 최단경로 값을 O(v^3)의 시간복잡도로 구할 수 있도록 하는 알고리즘 이었다.이번 시간에는 한 정점에서 나머지 정...">
   <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
-  <meta name="twitter:url" content="http://localhost:4000/tag/path-compression/">
+  <meta name="twitter:url" content="http://localhost:4000/algorithm/2020/01/01/Dijkstra.html">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/tag/path-compression/">
+  <link rel="canonical" href="http://localhost:4000/algorithm/2020/01/01/Dijkstra.html">
 	<link rel="alternate" type="application/rss+xml" title="Study Note" href="http://localhost:4000/feed.xml" />
 
 	<!-- Tooltips -->
@@ -181,30 +178,274 @@
 
 
     <div class="page-content">
-        <div class="wrapper">
-<div class="page">
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Posts in "Path-compression"</h1>
-  </header>
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">다익스트라 알고리즘(Dijkstra Algorithm)</h1>
+      <p class="info">by <strong>qkrwhdah03</strong></p>
+    </header>
+  </div>
+</div>
 
-  <span class="page-divider">
+<div class="wrapper">
+
+ <span class="page-divider">
   <span class="one"></span>
   <span class="two"></span>
 </span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">2020. 05. 13</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/Algorithm">Algorithm</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h3 id="서론">서론</h3>
+<p>그래프에서 최단 경로를 구하는 알고리즘이라고 한다면 대표적으로 플로이드-와샬 알고리즘, 다익스트라 알고리즘 등이 있다. 플로이드-와샬의 경우
+임의의 두 정점에 대한 최단경로 값을 O(v^3)의 시간복잡도로 구할 수 있도록 하는 알고리즘 이었다.
+이번 시간에는 한 정점에서 나머지 정점까지의 최단경로를 효율적으로 구할 수 있는 다익스트라 알고리즘에 대해 정리해 보았다.</p>
+
+<hr />
+
+<h3 id="다익스트라-알고리즘">다익스트라 알고리즘</h3>
+<ol>
+  <li>기본적으로 어떤 시작점 s에서 나머지 정점으로 가는 최단 경로의 값을 저장하는 배열 d를 하나 만들어준다. 이때, 시작 정점을 제외한 나머지 점들까지의 거리를 무한으로 설정해 준다.</li>
+  <li></li>
+</ol>
+
+</article>
 
 
-  <article class="post-content">
-    <ul class="posts-list">
-      
-      <li><strong><a class="post-link" href="/solving/2020/01/01/Codeup-3271.html">CodeUp 3271 중립국2</a></strong><span class="post-date"> - 2020. 01. 01</span></li>
-      
-    </ul>
-  </article>
 
-</div>
-</div>
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%28Dijkstra+Algorithm%29&u=http%3A%2F%2Flocalhost%3A4000%2Falgorithm%2F2020%2F01%2F01%2FDijkstra.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%28Dijkstra+Algorithm%29&url=http%3A%2F%2Flocalhost%3A4000%2Falgorithm%2F2020%2F01%2F01%2FDijkstra.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/algorithm/2020/01/01/Dijkstra.html') + '&title=다익스트라 알고리즘(Dijkstra Algorithm)'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+	<section class="post-navigation">
+		<span class="prev-post">
+			
+				<a href="/solving/2020/01/01/Codeup-3480.html">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="page-number">Codeup 3480 외식의 빗자루</span>
+				</a>
+			
+		</span>
+		<span class="next-post">
+			
+				<a href="/algorithm/2020/01/01/Lazy-Propagation.html">
+					<span class="page-number">Lazy Propagation</span>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+			
+		</span>
+	</section>
+
+
 <br>
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://qkrwhdah03-github-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</br>
+
+</div>
+</div>
 
     </div>
 

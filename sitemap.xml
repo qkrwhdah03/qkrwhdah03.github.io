@@ -33,7 +33,15 @@
 <lastmod>2020-01-01T09:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/algorithm/2020/01/01/Dijkstra.html</loc>
+<lastmod>2020-01-01T09:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/algorithm/2020/01/01/Lazy-Propagation.html</loc>
+<lastmod>2020-01-01T09:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/algorithm/2020/01/01/Topologicalsort.html</loc>
 <lastmod>2020-01-01T09:00:00+09:00</lastmod>
 </url>
 <url>
@@ -120,5 +128,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/page/2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page/3/</loc>
 </url>
 </urlset>
